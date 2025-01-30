@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'secondary-color': '#EFEBE3',
+                        'btn-color': 'rgba(23, 152, 0, 1)',
+                    }
+                }
             }
-          }
         }
-      </script>
-    
+    </script>
+
     <!-- import font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,43 +30,66 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
     <style>
-        .sora-font{
+        .sora-font {
             font-family: "Sora", serif;
         }
 
-        .poppins-font{
+        .poppins-font {
             font-family: "Poppins", serif;
         }
     </style>
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/52f25ae168.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="sora-font">
     <!-- header -->
-     <header>
+    <header class="container mx-auto">
         <!-- navbar -->
-         <nav></nav>
+        <nav class="py-4 md:py-6 border-b border-btn-color md:border-none">
+            <div class="navbar bg-base-100 md:flex justify-between px-3">
+                <div class="">
+                    <img src="c2-assets/logo-header.png" alt="">
+                </div>
+                <i class="fa-solid fa-bars md:hidden text-3xl text-btn-color"></i>
+                <div class=" hidden md:block lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-normal text-xl">Product</a></li>
+                        <li><a class="font-normal text-xl">Services</a></li>
+                        <li><a class="font-normal text-xl">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:block space-x-5">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    <a class="btn border border-btn-color bg-white font-normal text-xl">Login</a>
+                    <a class="btn bg-btn-color text-white font-normal text-xl">Register</a>
+                </div>
+            </div>
+        </nav>
 
-         <!-- banner -->
-          <section></section>
-     </header>
+        <!-- banner -->
+        <section></section>
+    </header>
 
-     <!-- main -->
-      <main>
+    <!-- main -->
+    <main>
         <!-- services -->
-         <section></section>
+        <section></section>
 
         <!-- popular product -->
-         <section></section>
+        <section></section>
 
         <!-- arrival and offers -->
-         <section></section>
+        <section></section>
 
         <!-- grocery news -->
-         <section></section>
-      </main>
+        <section></section>
+    </main>
 
-      <!-- footer -->
-       <footer></footer>
+    <!-- footer -->
+    <footer></footer>
 </body>
 
 </html>
