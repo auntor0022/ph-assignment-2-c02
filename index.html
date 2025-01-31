@@ -81,7 +81,7 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="relative">
         <!-- services -->
         <section class="mt-32 container mx-auto px-4">
             <h1 class="font-semibold text-4xl text-btn-color mb-12">Services</h1>
@@ -259,43 +259,88 @@
             <h1 class="font-semibold text-4xl text-btn-color mb-12">Arrival & Offers</h1>
 
             <!-- cards -->
-             <div class="flex flex-col md:flex-row gap-5 poppins-font">
+            <div class="flex flex-col md:flex-row gap-5 poppins-font">
                 <!-- card 1 -->
-                 <div class="bg-[#115414] w-full rounded-3xl flex justify-between items-center text-white pl-5 md:pl-10">
+                <div class="bg-[#115414] w-full rounded-3xl flex justify-between items-center text-white pl-5 md:pl-10">
                     <div class="">
                         <div class="mb-4">
                             <img src="c2-assets/dawat-logo.png" alt="" class="-ml-4">
                         </div>
-                        <button class="mt-4 md:mt-8 btn bg-[#63B76D] border-none text-white font-normal text-xs md:text-2xl">Cook Exotic Dishes</button>
-                        <h2 class="mt-3 md:mt-6 font-normal text-[20px] md:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
+                        <button
+                            class="mt-4 md:mt-8 btn bg-[#63B76D] border-none text-white font-normal text-xs md:text-2xl">Cook
+                            Exotic Dishes</button>
+                        <h2 class="mt-3 md:mt-6 font-normal text-[20px] md:text-[40px]">UP to <span
+                                class="font-bold">20% OFF</span></h2>
                     </div>
                     <div>
                         <img src="c2-assets/dawat-mock-up.png" alt="" class="pt-8">
                     </div>
-                 </div>
+                </div>
 
                 <!-- card 2 -->
-                 <div class="bg-[#102861] w-full md:w-9/12 rounded-3xl flex justify-between items-center text-white pl-5 md:pl-10">
+                <div
+                    class="bg-[#102861] w-full md:w-9/12 rounded-3xl flex justify-between items-center text-white pl-5 md:pl-10">
                     <div class="">
                         <div>
                             <img src="c2-assets/india-gate-logo.png" alt="" class="">
                         </div>
-                        <button class="mt-3 md:mt-8 btn bg-[#2A4D97] border-none text-white font-normal text-xs md:text-2xl">World’s No.1 Rice</button>
-                        <h2 class="pb-2 mt-3 md:mt-4 font-normal text-[20px] md:text-[40px]">UP to <span class="font-bold">40% OFF</span></h2>
+                        <button
+                            class="mt-3 md:mt-8 btn bg-[#2A4D97] border-none text-white font-normal text-xs md:text-2xl">World’s
+                            No.1 Rice</button>
+                        <h2 class="pb-2 mt-3 md:mt-4 font-normal text-[20px] md:text-[40px]">UP to <span
+                                class="font-bold">40% OFF</span></h2>
                     </div>
                     <div>
                         <img src="c2-assets/india-gate-mock-up.png" alt="" class="pt-8 md:-ml-4  w-[75%] lg:w-[100%]">
                     </div>
-                 </div> 
-             </div>
+                </div>
+            </div>
         </section>
 
         <!-- grocery news -->
-        <section class="container mx-auto mt-32"></section>
+        <section class="w-[398px] md:container mt-32 bg-secondary-color rounded-3xl absolute left-4 md:-bottom-[600px] lg:left-[185px]">
+            <div
+                class="flex flex-col justify-center text-center md:text-start md:flex-row items-center md:justify-evenly gap-6 p-8 md:p-4">
+                <div class="md:py-14">
+                    <img src="c2-assets/vegetable-busket.png" alt="" class="w-[70%] md:w-[100%] mx-auto">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-2xl md:text-4xl mb-3 md:mb-5 text-btn-color md:text-black">Get Grocery News!</h1>
+                    <p class="font-normal text-base md:text-xl mb-5 md:mb-9">Exclusive training tips, ticks, product
+                        deals and more.</p>
+                    <div class="">
+                        <input type="email" name="" id="" placeholder="Enter email...."
+                            class="mb-3 md:mb-9 py-5 pl-5 font-normal text-base text-[#C4C4C4] rounded-lg w-[312px] md:w-4/5">
+                    </div>
+                    <button class="btn bg-btn-color text-white font-normal text-xl">Subscribe</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="w-full bg-btn-color">
+        <div class="footer text-base-content p-6 md:p-0 mt-96 pt-[300px] md:pt-[370px] container mx-auto text-white flex flex-col md:flex-row md:items-end pb-12 md:pb-32">
+            <nav class="flex-1">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="font-normal text-base md:text-xl md:w-2/4 mt-3">Discover a world treats, toys, and essentials handpicked for your furry friends</p>
+            </nav>
+            <nav class="flex-1 md:space-y-7">
+                <a class="link link-hover font-normal text-base md:text-xl">Product</a>
+                <a class="link link-hover font-normal text-base md:text-xl">Services</a>
+                <a class="link link-hover font-normal text-base md:text-xl">Contact us</a>
+            </nav>
+            <nav class="">
+                <h6 class="font-medium text-base">Follow Us</h6>
+                <div class="grid grid-flow-col gap-6">
+                    <a class="text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="text-2xl"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
